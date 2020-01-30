@@ -60,7 +60,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-
 nav {
 	margin: 30px 200px 0px 250px;
 	word-spacing: 50px;
@@ -71,10 +70,6 @@ nav a {
 	display: inline-flex;
 	text-align: center;
 	text-decoration: none;
-}
-
-.header-container {
-	flex-direction: row;
 }
 
 h1 {
@@ -143,3 +138,31 @@ footer {
 	margin: 30px 200px 100px;
 }
 
+@media(max-width: 800px){
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .nav-div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-div nav {
+    display: flex;
+    justify-content: flex-start;
+    }
+
+    h1 {
+    display: flex;
+    flex-direction: column;
+    }
+
+    h1 button {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 0px;
+    }
+}
