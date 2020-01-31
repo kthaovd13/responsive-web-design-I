@@ -61,39 +61,44 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 nav {
-	margin: 30px 200px 0px 250px;
-	word-spacing: 50px;
+    margin: 30px 200px 0px 200px;
+    word-spacing: 39px;
+    
 }
 
-nav a {
+.nav-div {
 	color: gray;
-	display: inline-flex;
+    display: inline-flex;
+}
+
+.nav-div nav a {
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.inno-demand h1 {
 	text-align: center;
-	text-decoration: none;
+    font-size: 80px;
+    display: inline-block;
+	margin: 100px 200px 50px;
 }
 
-h1 {
-	text-align: center;
-	font-size: 80px;
-	display: inline-block;
-	margin: 120px 200px 80px;
-	column-count: 2;
+.inno-demand h1 button {
+    padding: 5px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
 }
 
-button {
-  padding: 5px 50px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid black;
+.inno-demand img {
+    border: 1px solid red;
 }
 
-h1 img{
-	float: right;
-  }
-
-.top-content div {
+.top-content {
+    column-count: 2;
 	border-top: 1px solid black;
 	display: inline-block;
 	font-weight: bold;
@@ -102,18 +107,15 @@ h1 img{
 	padding: 30px 0px;
 }
 
-.top-content img {
+.info-one img {
 	width: 70%;
 	height: 150px;
 	text-align: center;
 	margin: 0px 200px 30px;
 }
 
-.top-content div {
-		column-count: 2;
-	  }
-
-.bottom-content {
+.info-two {
+    column-count: 3;
 	border-bottom: 1px solid black;
 	display: inline-block;
 	font-weight: bold;
@@ -122,47 +124,57 @@ h1 img{
 	padding: 0px 0px 30px;
 }
 
-.bottom-content div {
-	column-count: 3;
-  }
-
 .contact {
 	font-weight: bold;
-	ddisplay: inline-flex;
+    display: flex;
+    flex-direction: column;
 	margin: 30px 200px 30px;
 }
 
 footer {
 	text-align: center;
 	font-weight: bold;
-	margin: 30px 200px 100px;
+	margin: 30px 200px 40px;
 }
 
 @media(max-width: 800px){
     .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-div {
         display: flex;
         flex-direction: column-reverse;
+        width: 30%;
+        border: 1px solid black;
     }
 
     .nav-div nav {
-    display: flex;
-    justify-content: flex-start;
-    }
+        display: flex;
+        flex-direction: flex-start;
+        align-items: center;
+        border: 1px solid red;
+        width: 150%;
+        }
 
     h1 {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid purple;
     }
 
     h1 button {
         display: flex;
         justify-content: space-evenly;
-        padding: 0px 0px;
+        align-items: center;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+
+    h1 img {
+        display: none;
     }
 }
