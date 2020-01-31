@@ -96,12 +96,10 @@ nav {
     width: 30%;
 }
 
-.top-content {
+.info-one .top-content {
     column-count: 2;
-	border-top: 1px solid black;
-	display: inline-block;
+	border-top: 2px solid black;
 	font-weight: bold;
-	text-align: left;
 	margin: 0px 200px;
 	padding: 30px 0px;
 }
@@ -115,12 +113,11 @@ nav {
 
 .info-two {
     column-count: 3;
-	border-bottom: 1px solid black;
-	display: inline-block;
+	border-bottom: 2px solid black;
 	font-weight: bold;
 	text-align: left;
 	margin: 0px 200px;
-	padding: 0px 0px 30px;
+	padding-bottom: 30px;
 }
 
 .contact {
@@ -195,6 +192,85 @@ footer {
 
     .contact {
         width: 90%;
+    }
+
+}
+
+/******media query MOBILE VIEW*****************/
+
+@media(max-width: 500px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 30%;
+    }
+
+    .nav-div nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 25px;
+        width: 375%;
+        }
+
+    .nav-div nav a {
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+
+    .inno-demand h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inno-demand h1 button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .inno-demand img {
+        display: none;
+    }
+
+    .info-one .top-content {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: left;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .info-one img {
+        width: 56%;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .info-two {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact {
+        width: 92%;
+    }
+
+    footer {
+        display: inline-flex;
+        width: 38%;
     }
 
 }
