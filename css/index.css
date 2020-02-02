@@ -80,7 +80,7 @@ nav {
 	text-align: center;
     font-size: 80px;
     display: inline-block;
-    margin: 100px 200px 50px;
+    margin: 30px 200px 30px;
 }
 
 .inno-demand h1 button {
@@ -208,20 +208,18 @@ footer {
     .nav-div {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
         width: 30%;
     }
 
     .nav-div nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         font-size: 25px;
-        width: 375%;
+        width: 345%;
+        border-top: 1px solid black;
         }
 
     .nav-div nav a {
-        justify-content: center;
         border-bottom: 1px solid black;
     }
 
@@ -244,17 +242,19 @@ footer {
     }
 
     .info-one .top-content {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
-        align-items: left;
-        width: 80%;
-        padding: 20px;
+        margin-left: 110px;
+        width: 70%;
+    }
+
+    .info-one .top-content h2 {
+        margin-top: 30px;
     }
 
     .info-one img {
-        width: 56%;
-        padding-left: 35px;
-        padding-right: 35px;
+        margin-left: 110px;
+        width: 70%;
     }
 
     .info-two {
