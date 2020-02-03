@@ -1,3 +1,276 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+nav {
+    margin: 30px 200px 0px 200px;
+    word-spacing: 35px;
+}
+
+.nav-div {
+	color: gray;
+    display: inline-flex;
+}
+
+.nav-div nav a {
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.inno-demand h1 {
+	text-align: center;
+    font-size: 80px;
+    display: inline-block;
+    margin: 30px 200px 30px;
+}
+
+.inno-demand h1 button {
+    padding: 5px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.inno-demand img {
+    width: 30%;
+}
+
+.info-one .top-content {
+    column-count: 2;
+	border-top: 2px solid black;
+	font-weight: bold;
+	margin: 0px 200px;
+	padding: 30px 0px;
+}
+
+.info-one img {
+	width: 70%;
+	height: 150px;
+	text-align: center;
+	margin: 0px 200px 30px;
+}
+
+.info-two {
+    column-count: 3;
+	border-bottom: 2px solid black;
+	font-weight: bold;
+	text-align: left;
+	margin: 0px 200px;
+	padding-bottom: 30px;
+}
+
+.contact {
+	font-weight: bold;
+    display: flex;
+    flex-direction: column;
+	margin: 30px 200px 30px;
+}
+
+footer {
+	text-align: center;
+	font-weight: bold;
+	margin: 30px 200px 40px;
+}
+
+/********media query TABLET VIEW*******/
+
+@media(max-width: 800px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 30%;
+    }
+
+    .nav-div nav {
+        display: flex;
+        flex-direction: flex-start;
+        justify-content: space-evenly;
+        width: 375%;
+        }
+
+    .inno-demand h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inno-demand h1 button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .inno-demand img {
+        display: none;
+    }
+
+    .info-one {
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        padding: 30px;
+    }
+
+    .info-one img {
+        width: 64%;
+    }
+
+    .info-two {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .contact {
+        width: 90%;
+    }
+
+}
+
+/******media query MOBILE VIEW*****************/
+
+@media(max-width: 500px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-div {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 30%;
+    }
+
+    .nav-div nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        width: 345%;
+        border-top: 1px solid black;
+        }
+
+    .nav-div nav a {
+        border-bottom: 1px solid black;
+    }
+
+    .inno-demand h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inno-demand h1 button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .inno-demand img {
+        display: none;
+    }
+
+    .info-one .top-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 110px;
+        width: 70%;
+    }
+
+    .info-one .top-content h2 {
+        margin-top: 30px;
+    }
+
+    .info-one img {
+        margin-left: 110px;
+        width: 70%;
+    }
+
+    .info-two {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact {
+        width: 92%;
+    }
+
+    footer {
+        display: inline-flex;
+        width: 38%;
+    }
+
+}
